@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background: color #000000;">
+    <script>
+        //js has 3 types of popup options-
+
+        //1 alert popup
+        //use this to show result or some instructions
+       //alert("this is how an alert looks like");
+
+       //2 confirm popup.
+       //use it to verify some info or apply checks
+       //confirm("are you a human?");
+
+       //3 prompt popup.
+       //use it to take some value
+       //prompt("then what then the hell you are?");
+
+       //implementing all three types,
+        alert("hello i am a popup, lets talk");
+        var identity = confirm("are you a human?,press ok");
+
+        if (identity==true){
+            var Name = prompt("nice, Then enter your Name-","write here please");//here , operator will show the string after it in textbox preview
+            document.write("nice to meet you "+ Name);
+        }
+        else{
+            var unknown = prompt("then what the hell are you?");
+            alert("nice to meet you "+unknown);
+        }
+
+        document.write("all three popups worked successfully.")
+
+
+
+    </script>
+</body>
+</html>
