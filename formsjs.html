@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--
+//now lets see how to use forms with javascript,
+
+//Step1- Make a regular HTML form
+//Step2- Take note of Form Name
+//step3- Take note of Form Field
+-->
+<form name="nameForForm_or_formNo" action="" onsubmit="formProcessor()" method="GET">
+  Name: <input type="text" name="FormFieldName">
+  <input type="submit" value="SubmitorWhateverYouWant">
+</form>
+
+<!--
+//Step4- Make a js function to Handle form,
+we will use previously made form name & form field name
+//Step5- we will use document.forms function,
+first input is the form name, and then form field name, which gives value of form input
+//#Now this can be logged or stored in a variable.
+-->
+<script>
+function formProcessor() {
+    //store in a variable
+    var formValue = document.forms["nameForForm_or_formNo"]["FormFieldName"].value;
+    if (formValue == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+    else{
+
+        console.log(formValue);//get in console
+        alert("You entered "+formValue);//get in alert
+    }
+  }
+</script>
+</body>
+</html>
