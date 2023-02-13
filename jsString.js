@@ -67,3 +67,31 @@ String padEnd()
 String charAt()
 String charCodeAt()
 String split()
+
+*****************
+String Interpolation- Automatic replacing of variables with real values is called string interpolation.
+Interpolation
+
+Template literals provide an easy way to interpolate variables and expressions into strings.
+
+The method is called string interpolation.
+
+The syntax is:
+${...}
+
+Variable Substitutions
+
+Template literals allow variables in strings:
+Example
+let firstName = "John";
+let lastName = "Doe";
+
+let text = `Welcome ${firstName}, ${lastName}!`;
+Expression Substitution
+
+Template literals allow expressions in strings:
+Example
+let price = 10;
+let VAT = 0.25;
+
+let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
