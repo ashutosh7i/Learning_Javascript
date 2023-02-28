@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script src="js.js"></script>
+    </head>
+    <body>
+        <img src="image.jpg">
+    </body>
+</html>
+//this is the basic embedding ofa js document in html.
+here the browser waits for the js file to completely download and then executes it and then continues the other html.
+//caused page loading and fluctuation
+
+<html>
+    <head>
+        <script async src="js.js"></script>
+    </head>
+    <body>
+        <img src="image.jpg">
+    </body>
+</html>
+//this is async embedding of js in html
+here js is downloaded while simultaneously parsing html, then embedded and executed and continue parsing
+//useful in rare cases
+
+
+<html>
+    <head>
+        <script defer src="js.js"></script>
+    </head>
+    <body>
+        <img src="image.jpg">
+    </body>
+</html>
+//this parsed html as well as simultaneously parses the js. then after parsing the whole html and js, the code is executed in last.
+//same as putting script in the end before </html>
+//optimum/best method
