@@ -95,3 +95,22 @@ let price = 10;
 let VAT = 0.25;
 
 let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+
+*/
+
+//a special string method
+let a = "Hello"
+let b = "World"
+
+console.log(a + " " + b) 	//works fine.
+
+
+//use the backtick 
+//backtick= ``
+//single quote= ''
+//double quote= ""
+
+
+console.log(`${a} ${b}`)
+console.log(`${1+2} hello, result is ${a}`)
+//backtick allows us to inset value of variable and perform operations, as well as use it as a string

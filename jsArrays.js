@@ -136,3 +136,15 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 document.getElementById("demo").innerHTML = fruits;
 
  */
+
+//arrays of Arrays
+//print 1, 7, 12
+const a = [
+            [1,2,3,4],
+            [5,6,7,8],
+            [9,10,11,12]
+]
+
+console.log(a[0][0])
+console.log(a[1][2])
+console.log(a[2][3])
